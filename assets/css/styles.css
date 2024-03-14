@@ -528,3 +528,21 @@ img {
     width: 450px;
   }
 }
+
+
+.glow-icon:hover {
+  animation: glow 1s infinite alternate; /* Apply the glow effect */
+}
+
+@keyframes glow {
+  from {
+      text-shadow: 0 0 10px orange, 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange;
+  }
+  to {
+      text-shadow: 0 0 20px orange, 0 0 30px orange, 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange, 0 0 80px orange;
+  }
+}
+
+.footer p {
+  margin: 5px 0; /* Add margin to separate each paragraph */
+}
