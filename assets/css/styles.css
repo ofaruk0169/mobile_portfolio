@@ -546,3 +546,35 @@ img {
 .footer p {
   margin: 5px 0; /* Add margin to separate each paragraph */
 }
+
+
+/* css grid */ 
+
+/* Simple side-by-side layout for About and Skills */
+.about-skills-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .about-skills-wrapper {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+  }
+}
+
+/* Add space above the about image */
+.about-skills-wrapper .about__img {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.about-skills-wrapper .about__img img {
+  max-width: 1000%;
+  height: auto;
+}
